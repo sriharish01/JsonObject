@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back1">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->   <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"><![CDATA[
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        ]]></android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Recipe"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#cde5ef"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ingredients:"
+        android:id="@+id/textView3"
+        android:textColor="#cde5ef" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:contextClickable="false"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp" />
+
+</LinearLayout>
